@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+<head>  
+<title>Shopping cart</title>
+<link rel="icon" href="images/18f16cbb-2db9-431c-9f1d-11d4d6719ca9.png" type="image/png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet prefetch" href="card.css"> 
+<script src="card.js"></script>
+</head>
+<body>
+<head>
+  <div class="headerbackgroundimg">
+    <ul class="header-list-1">
+        <li class="header-list-itmes1"><a href="#" class="fa fa-pinterest" target="_blank"></a></li>
+        <li class="header-list-itmes1"><a href="#" class="fa fa-instagram" target="_blank"></a></li>
+        <li class="header-list-itmes1"><a href="#" class="fa fa-youtube" target="_blank"></a></li> 
+        <li class="header-list-itmes1"><a href="#" class="fa fa-facebook" target="_blank"></a></li>
+        <li class="header-list-itmes1">Follow us: </li>
+      </ul>
+        <div class="imgandtitle1">
+                <img id="logoimage" src="images/18f16cbb-2db9-431c-9f1d-11d4d6719ca9.png" /> </div>
+                <div class="imgandtitle2"> Life is to short to wear boring clothes</div>
+      <ul class="header-list-2">
+        <li><a class="header-list-itmes" href="#">Home</a></li>
+        <li><a class="header-list-itmes" href="#">New Arrivals</a></li>
+        <li><a class="header-list-itmes" href="#">T-Shirts</a></li>
+        <li><a class="header-list-itmes" href="#">Shoes</a></li>
+        <li><a class="header-list-itmes" href="#">Bags</a></li>
+      </ul>
+      <ul class="header-list-3">
+        <li><a class="w3-btn w3-round-xxlarge color-link" href="#">Continue Shopping</a></li>
+        <li><a class="w3-btn w3-round-xxlarge color-link"  href="#">Save Bag</a></li>
+        <li><a class="w3-btn w3-round-xxlarge color-link" href="#">View Saved Bag</a></li>
+        <li><a class="w3-btn w3-round-xxlarge color-link" href="#">Live Chat</a></li>
+      </ul>
+    </div>    
+</head>
+<main>   <!--main started -->   
+<div class="main-class-first-part">     
+<div class="cart">
+<div class="cart-header">
+<h4> Shopping Bag </h4></div>
+<div class="cart-titles">
+  <h4> Items </h4>
+  <h4> Description </h4>
+  <h4> Quantity</h4>
+  <h4> Price </h4>
+  <h4> Options </h4>
+</div>
+<div id="clothes1" class="clothes">
+<div><img  class="img_dimension" src="images/t-shirt-brode-personnalise.jpg" alt=" "></div>
+<div class="description">
+<div class="product-name">T-shirt</div><div class="product-color">Blue</div> 
+</div>
+<div class="calcule">
+<input type="submit" class="w3-btn w3-circle"  id="addition" value="+" onclick="add(1);">
+<span class="Qte" id="quantity1">1</span>
+<input type="submit" class="w3-btn w3-circle"  id="soustraction" onclick="soustraction(1)" value="-">
+</div><div><h4 id="item-price1" value="750" class="price">750$</h4>
+</div>
+<div> <div class="option">
+    <button class="w3-btn w3-round-xlarge"  onclick="delet_item(1);"><i class="fa fa-trash"></i></button>
+  </div></div>
+</div>
+<div id="clothes2" class="clothes">
+  <div><img  class="img_dimension" src="images/t-shirt-la-femme-parfaite-personnalise.jpg" alt=" "></div>
+  <div class="description">
+  <div class="product-name">T-shirt</div>
+   <div class="product-color">white</div> </div>
+  <div class="calcule">
+      <input type="submit" class="w3-btn w3-circle"  id="addition" onclick="add(2)" value="+">
+      <span class="Qte" id="quantity2" >1</span>
+      <input type="submit" class="w3-btn w3-circle"  id="soustraction" onclick="soustraction(2)" value="-">
+  </div><div><h4 id="item-price2" value="300" class="price">300$</h4>
+  </div>
+  <div> <div class="option">
+    <button class="w3-btn w3-round-xlarge"  onclick="delet_item(2);"><i class="fa fa-trash"></i></button>
+  </div></div>
+  </div>
+  <div id="clothes3" class="clothes">
+    <div><img  class="img_dimension" src="images/t-shirt-mariniere-brodee-france.jpg" alt=" "></div>
+    <div class="description">
+    <div class="product-name">T-shirt</div>
+     <div class="product-color">White with stripes</div> </div>
+    <div class="calcule">
+        <input type="submit" class="w3-btn w3-circle" id="addition" onclick="add(3)" value="+">
+        <span class="Qte" id="quantity3" >1</span>
+        <input type="submit"class="w3-btn w3-circle"  id="soustraction" onclick="soustraction(3)" value="-">
+    </div><div><h4 id="item-price3" value="450" class="price">450$</h4>
+    </div>
+    <div> <div class="option">
+      <button  class="w3-btn w3-round-xlarge" onclick="delet_item(3);"><i class="fa fa-trash"></i></button>
+    </div></div>
+    </div>
+
+    <div class="cart-footer">
+    <div class="footer-first-part" > <p> Total Price</p><p id="pricetot"> 1500$ </p></div><hr>
+    <div class="footer-second-part"> <p> Shipping</p><p id="shipping"> 12$ </p></div><hr>
+    <div class="footer-fourth-part"> <p> Total Amount </p><p id="total"> 1512$ </p></div><hr>
+    <div class="footer-Third-part"> <a class="w3-btn w3-round-xxlarge" href="#">Continue Shopping</a>
+      <a class="w3-btn w3-round-xxlarge" href="#">Pay Now</a>
+    </div>
+    </div>
+</div>
+</div>
+</main> 
+<footer>    
+<div class="footercus"> <!--footer started--> 
+<p>Posted by: Hanen Fourati <br> Contact information:
+<a href="#">fouratihanen@gmail.com</a>.</p></div>
+</footer>
+</body> 
+</html> 
