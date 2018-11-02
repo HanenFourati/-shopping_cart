@@ -1,17 +1,16 @@
 body{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-image: url('images/nicole-honeywill-416492-unsplash.jpg');
+    background-color: rgba(241, 241, 143, 0.637);
+   /* background-image: url('.jpg');
     background-position: 40% 30%;
     background-repeat:   no-repeat;
-    background-size:     cover;
+    background-size:     cover;*/
  
 }
 /***geniric part ended**/
 /***body started**/
 /**header started**/
-.color-link{
-    color: rgb(161, 103, 255);
-}
+
 .header-list-1{
     list-style-type: none;
     margin: 0;
@@ -65,13 +64,13 @@ body{
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 .imgandtitle2{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-  
     font-weight: bold;
     color:rgb(186, 147, 248);
     }
@@ -84,6 +83,7 @@ justify-content: center;
     justify-content: center;
     box-shadow: 0 4px 2px -2px gray;
     border-top: 1px solid  gray;
+    background-color: rgba(186, 147, 248, 0.685);
 }
 .header-list-3 {
     list-style-type: none;
@@ -93,6 +93,9 @@ justify-content: center;
     color: rgb(0, 0, 0);
     padding: 1%;
 }
+.color-link{
+    color: rgb(2, 2, 2);
+}
 .header-list-itmes{
     color: rgb(0, 0, 0);
     text-align: center;
@@ -100,7 +103,7 @@ justify-content: center;
     text-decoration: none;
 }
 .header-list-itmes:hover {
-    color: rgb(186, 147, 248);
+    color: rgba(241, 241, 143, 0.877);
     
 }
 /*** main started ***/
